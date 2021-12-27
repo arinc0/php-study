@@ -15,3 +15,16 @@ services:
       - ./server:/var/www
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
     working_dir: /var/www
+
+  db:
+    build:
+      context: ./docker/db
+      dockerfile: Dockerfile
+    volumes:
+      - db-store:/var/lib/mysql
+      - ./docker/db/log:/var/log/mysql
+    ports:
+      - 3306:3306
+
+volumes:
+  db-store: null
