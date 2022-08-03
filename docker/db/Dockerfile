@@ -8,7 +8,8 @@ ENV MYSQL_DATABASE=database \
 
 COPY ./my.cnf /etc/mysql/conf.d/my.cnf
 
-RUN mkdir /var/lib/mysql-files && \
-    chmod 644 /etc/mysql/conf.d/my.cnf && \
+# MEMO: M1 macだとエラー出た
+# RUN mkdir /var/lib/mysql-files && \
+RUN chmod 644 /etc/mysql/conf.d/my.cnf && \
     chmod 644 /var/lib/mysql-files
 
