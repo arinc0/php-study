@@ -19,3 +19,6 @@ mysql -h127.0.0.1 -udocker -p < sql/create_online_bbs_db.sql
 # table
 mysql -h127.0.0.1 -udocker -p online_bbs  < sql/create_posts_table.sql 
 ```
+
+## ひとこと掲示板
+http://study.localhost/online_bbs/bbs.php
