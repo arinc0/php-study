@@ -22,3 +22,5 @@ mysql -h127.0.0.1 -udocker -p online_bbs  < sql/create_posts_table.sql
 
 ## ひとこと掲示板
 http://study.localhost/online_bbs/bbs.php
+
+mysql_connect(), mysql_select_db(), mysql_real_escape_string(), mysql_query(), mysql_fetch_assoc(), mysql_num_rows()はPHP7以上では削除されている為、代替メソッドを使用。
